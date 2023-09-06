@@ -2,4 +2,4 @@
 
 //export const url = "http://localhost:7700/api/v1"
 
-export const url = "https://brick-red-penguin-boot.cyclic.app/api/v1"
+export const url = "https://marrylocal.domcloud.io/api/v1"
