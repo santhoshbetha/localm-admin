@@ -1,13 +1,11 @@
 import { useState } from "react";
 import "./login.css";
-import { useNavigate } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner';
 
 export default function Login() {
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
    const [loading, setLoading] = useState(false);
-   const navigate = useNavigate()
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -35,7 +33,6 @@ export default function Login() {
           window.localStorage.setItem("loggedIn", true);
           window.location.href = "./";
           //window.location.reload(false); 
-          //navigate('/')
           console.log("login successful 2");
         }
       });
