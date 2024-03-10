@@ -110,24 +110,28 @@ export default function Search() {
             {!isObjEmpty(userdata) &&
             <div className="mt-3 d-flex align-items-justify gap-3">
                 <div className="col-6 border border-1">
-                    <p><span className="text-info">UserId: </span>{userdata.userid}</p>
-                    <p><span className="text-info">Name:</span> {userdata.firstname},  {userdata.lastname} </p>
-                    <p><span className="text-info">Age:</span> {userdata.age} </p>
-                    <p><span className="text-info">Gender:</span> {userdata.gender}</p>
-                    <p><span className="text-info">Email:</span> {userdata.email}</p>
-                    <p><span className="text-info">Phone:</span> {userdata.phonenumber}</p>
-                    <p><span className="text-info">location:</span> {userdata.city}, {userdata.state}</p>
-                    <p><span className="text-info">community:</span> {userdata.community}, {userdata.religion}</p>
-                    <p><span className="text-info">co-ordinates:</span> {userdata.latitude}, {userdata.longitude}</p>
+                    <p><span className="text-info">UserId: </span>{userdata?.userid}</p>
+                    <p><span className="text-info">Name:</span> {userdata?.firstname},  {userdata?.lastname} </p>
+                    <p><span className="text-info">Age:</span> {userdata?.age} </p>
+                    <p><span className="text-info">Gender:</span> {userdata?.gender}</p>
+                    <p><span className="text-info">Email:</span> {userdata?.email}</p>
+                    <p><span className="text-info">Phone:</span> {userdata?.phonenumber}</p>
+                    <p><span className="text-info">location:</span> {userdata?.city}, {userdata?.state}</p>
+                    <p><span className="text-info">community:</span> {userdata?.community}, {userdata?.religion}</p>
+                    <p><span className="text-info">co-ordinates:</span> {userdata?.latitude}, {userdata?.longitude}</p>
                 </div>
+            </div>
+            }
+            {!isObjEmpty(userdata?.addons) &&
+            <div>
                 <div className="col-6 border border-1">
                     <p>Addons</p>
-                    <p><span className="text-info">CommunitSearch:</span> {userdata.addons.communitySearch ? 'Yes' : 'No'}</p>
-                    <p><span className="text-info">FullcitySearch:</span> {userdata.addons.fullcitySearch ? 'Yes' : 'No'}</p>
-                    <p><span className="text-info">Location2:</span> {userdata.addons.location2.lat}, {userdata.addons.location2.lng}</p>
-                    <p><span className="text-info">City2:</span> {userdata.addons.location2.city2}, <span className="text-info">State2:</span> {userdata.addons.location2.state2}</p>
-                    <p><span className="text-info">Location3:</span> {userdata.addons.location3.lat}, {userdata.addons.location3.lng}</p>
-                    <p><span className="text-info">City3:</span> {userdata.addons.location3.city3}, <span className="text-info">State2:</span> {userdata.addons.location3.state3}</p>
+                    <p><span className="text-info">CommunitSearch:</span> {userdata?.addons.communitySearch ? 'Yes' : 'No'}</p>
+                    <p><span className="text-info">FullcitySearch:</span> {userdata?.addons.fullcitySearch ? 'Yes' : 'No'}</p>
+                    <p><span className="text-info">Location2:</span> {userdata?.addons.location2.lat}, {userdata?.addons.location2.lng}</p>
+                    <p><span className="text-info">City2:</span> {userdata?.addons.location2.city2}, <span className="text-info">State2:</span> {userdata?.addons.location2.state2}</p>
+                    <p><span className="text-info">Location3:</span> {userdata?.addons.location3.lat}, {userdata?.addons.location3.lng}</p>
+                    <p><span className="text-info">City3:</span> {userdata?.addons.location3.city3}, <span className="text-info">State2:</span> {userdata?.addons.location3.state3}</p>
                     <p>Subscription Info</p>
                 </div>
             </div>
@@ -138,3 +142,6 @@ export default function Search() {
   )
 }
 
+/*
+
+*/
