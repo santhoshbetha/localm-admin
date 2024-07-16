@@ -8,6 +8,7 @@ import User from './pages/user/User';
 import NewUser from "./pages/newUser/NewUser";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
+import CitiesAdmin from './pages/cities/CitiesAdmin';
 import Search from './pages/search/Search';
 import { UserListDataContextProvider } from './context/userContext/UserContext';
 
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/user/:userId" element={<User/>}/>
                 <Route path="/newuser" element={<NewUser/>}/>
                 <Route path="/search" element={<Search/>}/>
+                <Route path="/citiesadmin" element={<CitiesAdmin/>}/>
               </>
               )}
           </Routes>

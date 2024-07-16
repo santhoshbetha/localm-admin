@@ -26,8 +26,8 @@ export default function Sidebar() {
                 <ul className="sidebarList">
                 <Link to="/" className="link">
                     <li className="sidebarListItem active">
-                    <LineStyle className="sidebarIcon" />
-                    Home
+                        <LineStyle className="sidebarIcon" />
+                        Home
                     </li>
                 </Link>
                 <Link to="/users" className="link">
@@ -38,8 +38,14 @@ export default function Sidebar() {
                 </Link>
                 <Link to="/search" className="link">
                     <li className="sidebarListItem">
-                    <Search className="sidebarIcon" />
-                    Search User
+                        <Search className="sidebarIcon" />
+                        Search User
+                    </li>
+                </Link>
+                <Link to="/citiesadmin" className="link">
+                    <li className="sidebarListItem">
+                        <Search className="sidebarIcon" />
+                        Cities Admin
                     </li>
                 </Link>
                 </ul>
